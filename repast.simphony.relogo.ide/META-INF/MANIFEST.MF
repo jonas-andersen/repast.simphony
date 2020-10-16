@@ -30,7 +30,9 @@ Require-Bundle: org.eclipse.debug.core,
  org.codehaus.groovy.eclipse.dsl,
  org.codehaus.groovy.eclipse,
  org.codehaus.groovy,
- repast.simphony.groovy
+ repast.simphony.groovy,
+ org.junit,
+ org.eclipse.jdt.core.manipulation
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: bin/,
  .,

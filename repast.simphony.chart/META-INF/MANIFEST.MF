@@ -4,7 +4,8 @@ Bundle-Name: Repast chart
 Bundle-SymbolicName: repast.simphony.chart
 Bundle-Version: 2.8.0
 Bundle-ClassPath: lib/jcommon-1.0.23.jar,
- lib/jfreechart-1.0.19.jar
+ lib/jfreechart-1.0.19.jar,
+ bin/
 Export-Package: com.keypoint,
  org.jfree,
  org.jfree.base,
