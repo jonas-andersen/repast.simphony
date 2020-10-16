@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>repast.simphony.ide</groupId>
+	<artifactId>repast.simphony.ide</artifactId>
+	<version>2.8.0</version>
+	<packaging>pom</packaging>
+
+	<organization>
+		<name>Argonne National Laboratory</name>
+		<url>https://repast.github.io</url>
+	</organization>
+	<url>https://repast.github.io</url>
+
+	<licenses>
+		<license>
+			<name>Repast Suite License</name>
+			<url>https://repast.github.io/license.html</url>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>https://github.com/repast/repast.simphony</connection>
+		<tag>development</tag>
+		<url>https://github.com/repast/repast.simphony/</url>
+	</scm>
+
+	<issueManagement>
+		<url>https://github.com/Repast/repast.simphony/issues</url>
+		<system>GitHub</system>
+	</issueManagement>
+
+	<properties>
+		<repast.version>2.8.0</repast.version>
+		<tycho-version>2.0.0</tycho-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>libs.bsf</module>
+		<module>libs.ext</module>
+		<module>libs.piccolo</module>
+		<module>saf.core.ui</module>
+		<module>repast.simphony.runtime</module>
+		<module>repast.simphony.core</module>
+		<module>repast.simphony.eclipse</module>
+		<module>repast.simphony.scenario</module>
+		<module>repast.simphony.groovy</module>
+		<module>repast.simphony.gui</module>
+		<module>repast.simphony.plugin.util</module>
+		<module>repast.simphony.userpanel.ui</module>
+		<module>repast.simphony.chart</module>
+		<module>repast.simphony.visualization</module>
+		<module>repast.simphony.data</module>
+		<module>repast.simphony.data.ui</module>
+		<module>repast.simphony.gis</module>
+		<module>repast.simphony.gis.visualization</module>
+		<module>repast.simphony.freezedry</module>
+		<module>repast.simphony.dataLoader</module>
+		<module>repast.simphony.dataLoader.ui</module>
+		<module>repast.simphony.jdbcfreezedryer</module>
+		<module>repast.simphony.jasperreports</module>
+		<module>repast.simphony.jung</module>
+		<module>repast.simphony.pajek</module>
+		<module>repast.simphony.R</module>
+		<module>repast.simphony.weka</module>
+		<module>repast.simphony.spreadsheet</module>
+		<module>repast.simphony.sql</module>
+		<module>repast.simphony.integration</module>
+		<module>repast.simphony.essentials</module>
+		<module>repast.simphony.statecharts</module>
+		<module>repast.simphony.statecharts.model</module>
+		<module>repast.simphony.statecharts.visualization</module>
+		<module>repast.simphony.statecharts.edit</module>
+		<module>repast.simphony.statecharts.generator</module>
+		<module>repast.simphony.statecharts.diagram</module>
+		<module>repast.simphony.relogo.runtime</module>
+		<module>repast.simphony.relogo.ide</module>
+		<module>repast.simphony.relogo.builder</module>
+		<module>repast.simphony.batch</module>
+		<module>repast.simphony.distributed.batch</module>
+		<module>repast.simphony.distributed.batch.ui</module>
+		<module>repast.simphony.server</module>
+		<module>repast.simphony.bin_and_src</module>
+	</modules>
+
+	<profiles>
+		<profile>
+			<id>e416</id>
+			<repositories>
+				<repository>
+					<id>2020-06</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/releases/2020-06/</url>
+				</repository>
+				<repository>
+					<id>Groovy Eclipse</id>
+					<layout>p2</layout>
+					<url>https://dist.springsource.org/release/GRECLIPSE/e4.16</url>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<id>package-feature</id>
+						<configuration>
+							<finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<executionEnvironment>JavaSE-1.8</executionEnvironment>
+					<resolver>p2</resolver>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-source-feature-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>source-feature</id>
+						<phase>package</phase>
+						<goals>
+							<goal>source-feature</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-source-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>plugin-source</id>
+						<goals>
+							<goal>plugin-source</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+		<pluginManagement>
+			<plugins>
+
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-compiler-plugin</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<encoding>UTF-8</encoding>
+						<compilerArgument>-err:-forbidden</compilerArgument> <!-- compile error in server if not present, check -->
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>
+

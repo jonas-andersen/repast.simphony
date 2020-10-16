@@ -3,4 +3,5 @@ bin/
 test_bin/
 test-bin/
 bin-standalone/
+target/
 
