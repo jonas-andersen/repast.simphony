@@ -14,3 +14,4 @@ Require-Bundle: repast.simphony.core,
  org.junit
 Bundle-Vendor: Argonne National Laboratory
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BundleShape: dir

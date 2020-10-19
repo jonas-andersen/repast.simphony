@@ -27,3 +27,4 @@ Bundle-ClassPath: bin/,
  .
 Export-Package: repast.simphony.statecharts.generator
 Bundle-Vendor: Argonne National Laboratory
+Eclipse-BundleShape: dir

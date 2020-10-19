@@ -22,3 +22,4 @@ Bundle-ClassPath: .,
  lib/xmltask.jar
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Argonne National Laboratory
+Eclipse-BundleShape: dir

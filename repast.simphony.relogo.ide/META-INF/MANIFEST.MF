@@ -41,3 +41,4 @@ Import-Package: repast.simphony.relogo.image,
  repast.simphony.relogo.util
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Argonne National Laboratory
+Eclipse-BundleShape: dir

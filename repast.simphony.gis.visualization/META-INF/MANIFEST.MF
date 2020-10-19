@@ -140,3 +140,4 @@ Export-Package: com.zebraimaging,
  repast.simphony.visualization.gui
 Import-Package: repast.simphony.gis.visualization.engine,
  repast.simphony.visualization.gis3D
+Eclipse-BundleShape: dir

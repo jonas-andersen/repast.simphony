@@ -20,3 +20,4 @@ Export-Package: org.piccolo2d,
  org.piccolo2d.util
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Argonne National Laboratory
+Eclipse-BundleShape: dir

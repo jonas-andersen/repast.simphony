@@ -13,3 +13,4 @@ Require-Bundle: repast.simphony.runtime,
 Bundle-Vendor: Argonne National Laboratory
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: repast.simphony.ui.plugin.editor
+Eclipse-BundleShape: dir

@@ -174,3 +174,4 @@ Require-Bundle: repast.simphony.core,
 Bundle-Vendor: Argonne National Laboratory
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: jogamp.opengl.awt
+Eclipse-BundleShape: dir

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="repast.simphony.feature">
+      <category name="repast.simphony.update"/>
+   </feature>
+   <category-def name="repast.simphony.update" label="Repast Simphony">
+      <description>
+         Repast Simphony is a free and open source agent-based modeling toolkit that offers users a rich variety of features. Documentation on Repast Simphony, including a tutorial, can be found at http://repast.github.io
+      </description>
+   </category-def>
+</site>

@@ -5,3 +5,4 @@ Bundle-SymbolicName: repast.simphony.bin_and_src
 Bundle-Version: 2.8.0
 Bundle-Vendor: Argonne National Laboratory
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BundleShape: dir

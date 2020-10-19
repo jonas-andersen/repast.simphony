@@ -6,3 +6,4 @@ Bundle-Version: 2.8.0
 Export-Package: repast.simphony.groovy.math
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Argonne National Laboratory
+Eclipse-BundleShape: dir

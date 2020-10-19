@@ -72,3 +72,4 @@ Require-Bundle: repast.simphony.core,
  saf.core.ui
 Bundle-Vendor: Argonne National Laboratory
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BundleShape: dir

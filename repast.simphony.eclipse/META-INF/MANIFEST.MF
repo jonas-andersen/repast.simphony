@@ -48,3 +48,5 @@ Export-Package: .,
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Plugin-Class: repast.simphony.eclipse.RepastSimphonyPlugin
 Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
+Eclipse-BundleShape: dir

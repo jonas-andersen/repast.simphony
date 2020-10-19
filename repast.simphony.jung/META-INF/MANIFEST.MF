@@ -12,3 +12,4 @@ Require-Bundle: repast.simphony.gui,
 Bundle-Vendor: Argonne National Laboratory
 Export-Package: repast.simphony.jung
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BundleShape: dir

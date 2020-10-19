@@ -68,3 +68,4 @@ Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: junit.framework,
  org.codehaus.groovy.eclipse.core
+Eclipse-BundleShape: dir

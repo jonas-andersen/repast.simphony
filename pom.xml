@@ -38,6 +38,7 @@
 	</properties>
 
 	<modules>
+		<module>repast.simphony.product.e416</module>
 		<module>repast.simphony.feature</module>
 		<module>libs.bsf</module>
 		<module>libs.ext</module>

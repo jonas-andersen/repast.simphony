@@ -512,3 +512,4 @@ Require-Bundle: repast.simphony.runtime,
 Bundle-Vendor: Argonne National Laboratory
 Eclipse-LazyStart: false
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BundleShape: dir

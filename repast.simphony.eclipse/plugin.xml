@@ -21,6 +21,23 @@
       <variable name="REPAST_VERSION" initialValue="2.8.0">
       </variable>
    </extension>
+
+<!-- =================================================================================== -->
+<!-- Extension: Repast Simphony Product                                                  -->
+<!-- =================================================================================== -->
+   <extension
+         id="repastsimphony"
+         point="org.eclipse.core.runtime.products">
+         <product name="%productName"
+               application="org.eclipse.ui.ide.workbench"
+               description="%productBlurb">
+            <property name="windowImages" value="repast-16.png,repast-32.png,repast-48.png"/>
+            <property name="appName" value="%productName"/>
+            <property name="aboutImage" value="about.png"/>
+            <property name="aboutText" value="%productBlurb"/>
+            <property name="preferenceCustomization" value="plugin_customization.ini"/>
+         </product>
+   </extension>
    
 <!-- =================================================================================== -->
 <!-- Extensions: Repast Simphony Classpath Containers                                     -->

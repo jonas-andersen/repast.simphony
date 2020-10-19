@@ -25,3 +25,4 @@ Export-Package: com.gentlyweb.utils,
 Bundle-ClassPath: lib/JoSQL-2.2.jar,
  lib/gentlyWEB-utils-1.1.jar
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BundleShape: dir

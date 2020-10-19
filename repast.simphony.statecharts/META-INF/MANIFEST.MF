@@ -7,3 +7,4 @@ Export-Package: repast.simphony.statecharts
 Require-Bundle: repast.simphony.core;visibility:=reexport
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Argonne National Laboratory
+Eclipse-BundleShape: dir

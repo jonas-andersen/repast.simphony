@@ -66,3 +66,4 @@ Bundle-ClassPath: saf.core.ui.jar,
 Require-Bundle: libs.ext
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Argonne National Laboratory
+Eclipse-BundleShape: dir

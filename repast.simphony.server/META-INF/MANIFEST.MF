@@ -45,3 +45,4 @@ Bundle-ClassPath: lib/annotations-13.0.jar,
  .
 Export-Package: repast.simphony.ws,
  repast.simphony.ws.gis
+Eclipse-BundleShape: dir
